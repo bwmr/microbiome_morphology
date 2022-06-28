@@ -1,0 +1,76 @@
+,Strain,Identifier,Carbon_Source,Analysis_Level,Gram,Isolated_From
+200312-1,Ruminococcus_albus_7,DSM_20455,Cellobiose,Basic,positive,Cow
+200312-2,Prevotella_bryantii_B14,DSM_11371,Glucose,Intermediate,negative,Cow
+200312-3,Mitsuokella_jalaludinii_M9,DSM_13811,Glucose,Basic,negative,Cow
+200602-1,Anaerobutyricum_hallii,DSM_3353,Glucose,Intermediate,positive,Human
+200602-2,Marvinbryantia_formatexigens,DSM_14469,Glucose,Intermediate,positive,Human
+200602-3,Roseburia_intestinalis_L1-82,DSM_14610,Glucose,Intermediate,positive,Human
+200707-1,Anaerovibrio_lipolyticus_5S,DSM_3074,Glucose,Detailed,negative,Sheep
+200707-2,Agathobacter_ruminis,DSM_29029,Glucose,Detailed,negative,Sheep
+200707-3,Bacteroides_cellulosyliticus_CRE21,DSM_14838,Glucose,Intermediate,negative,Human
+200707-4,Wolinella_sp_Vibrio_succinogenes,ATCC_33567,Fumarate_Formate_AsparticAcid,Detailed,negative,Human
+200707-5,Pseudobutyrivibrio_sp_LB2011,NA,Soluble_Starch,Detailed,positive,Cow
+200714-1,Bacteroides_thetaiotaomicron,DSM_2079,Glucose,Intermediate,negative,Human
+200714-2,Clostridium_butyricum_5001_beijerinckii,NA,Glucose,Basic,positive,Cow
+200714-3,Peptostreptococcus_anaerobius_strain_C,NA,Glucose,Basic,positive,Cow
+200714-4,Clostridium_cadaveris_G65,AGR2141,Glucose,Intermediate,positive,Cow
+200714-5,Selenomonas_ruminantium_AB3002_P159,NA,Glucose,Intermediate,negative,Cow
+200715-1,Bifidobacterium_animalis_UR1,DSM_10140,Glucose,Basic,positive,Yoghurt
+200715-2,Ligilactobacillus_ruminis_Lactobacillus_ruminis,DSM_20403,Glucose,Intermediate,positive,Cow
+200715-3,Terrisporobacter_glycolicus_strain_KPPR-9,NA,Glucose,Basic,positive,Cow
+200715-4,Basfia_succiniciproducens,DSM_22022,Glucose,Intermediate,negative,Cow
+200715-5,Bacteroides_vulgatus_Madison,NA,Glucose,Basic,negative,Cow
+200715-6,Proteiniclasticum_ruminis,DSM_24773,Glucose,Intermediate,negative,Yak
+200727-2,Pediococcus_acidilactici_N775,AGR20,Glucose,Basic,positive,Sheep
+200727-3,Streptococcus_henryi_A_4,NA,Glucose,Basic,positive,Cow
+200728-1,Bifidobacterium_choerinum,AGR2158,Glucose,Basic,positive,Cow
+200728-2,Fusobacterium_necrophorum,Hun48,Glucose,Basic,negative,Cow
+200728-3,Propionibacteriaceae_bacterium_P6A17,NA,Glucose,Intermediate,positive,"Ruminator, unspecified"
+200811-1,Limosilactobacillus_reuteri_Lactobacillus_reuteri,DSM_17938,Glucose,Basic,positive,Human
+200811-2,Bacteroides_caccae,DSM_19024,Glucose,Intermediate,negative,Human
+200811-3,Bacteroides_uniformis,ATCC_8492,Glucose,Basic,negative,Human
+200811-4,Corynebacterium_vitaeruminis_Ga6A13,NA,Glucose,Basic,positive,"Ruminator, unspecified"
+200811-5,Sharpea_azabuensis,DSM_20406,Glucose,Detailed,positive,Cow
+200903-1,Dorea_sp,AGR2135,Glucose,Intermediate,positive,"Ruminator, unspecified"
+200903-3,Streptococcus_bovis,ATCC_33317,Glucose,Basic,positive,Cow
+201019-1,Bacteroides_thetaiotaomicron,DSM_2079,Starch_Maltose,Intermediate,negative,Human
+201019-2,Butyrivibrio_fibrisolvens_CF3,NA,Glucose,Detailed,negative,Cow
+201019-3,Methanobrevibacter_ruminantium_M1,DSM_1093,Acetate_Formate,Basic,NA,Cow
+201019-4,Methanomicrobium_mobile_BP,DSM_1539,Acetate_Formate,Detailed,NA,Cow
+201020-1,Blautia_schinkii,DSM_10518,Glucose,Basic,positive,Lamb
+201020-3,Methanocorpusculum_labreanum_Z,DSM_4855,Acetate_Formate,Intermediate,NA,Environmental
+201026-1,Actinomyces_ruminicola_B71,DSM_27982,Acetate_Formate,Basic,positive,Cow
+201026-3,Faecalibacterium_prausnitzii_A2-165,DSM_17677,Glucose,Intermediate,positive,Human
+201027-1,Clostridium_aminophilum_F,DSM_10710,Glucose,Intermediate,positive,Cow
+201027-2,Megamonas_sp_Calf98_2,NA,Glucose,Basic,NA,Cow
+201027-3,Selenomonas_bovis,DSM_23594,Glucose,Intermediate,negative,Yak
+201027-4,Succinivibrio_dextrinosolvens,DSM_3072,Glucose,Detailed,negative,Cow
+201104-1,Ruminococcus_champanellensis_18P13,JCM_17042,Cellobiose,Basic,positive,Human
+201104-2,Ruminococcus_champanellensis_18P13,JCM_17042,Cellulose,Basic,positive,Human
+201104-4,Akkermansia_muciniphila_Muc,DSM_22959,Glucose_Mucin,Intermediate,negative,Human
+201118-1,Butyrivibrio_fibrisolvens_D1,DSM_3071,Glucose,Intermediate,positive,Cow
+201118-2,Megasphaera_elsdenii_LC1,DSM_20460,Fructose,Basic,negative,Sheep
+201118-4,Olsenella_umbonata_strain_WCP15,NA,Fructose,Basic,positive,Cow
+201125-1,Prevotella_ruminicola,ATCC_19189,Rumen_fluid,Intermediate,negative,Cow
+201125-2,Ruminococcus_gnavus,AGR2154_Hun22,Glucose,Basic,positive,Cow
+201209-1,Bifidobacterium_ruminantium,DSM_6489,Glucose,Intermediate,positive,Cow
+201209-2,Lachnospira_multipara_G6,ATCC_19207,Glucose,Intermediate,positive,Cow
+201209-3,Micrococcales_bacterium_KH10,NA,Glucose,Basic,positive,Cow
+201209-5,Eubacterium_pyruvativorans_KHPC4,NA,Glucose,Intermediate,positive,Cow
+201209-6,Succinimonas_amylolytica,DSM_2873,Glucose,Basic,negative,Cow
+201211-1,Bacteroides_thetaiotaomicron,DSM_2079,Glucose,Intermediate,negative,Human
+201216-1,Bifidobacterium_adolescentis,DSM_20087,Glucose,Intermediate,positive,Cow
+201216-2,Butyrivibrio_sp,DSM_10294,Glucose,Intermediate,NA,Cow
+201216-3,Eubacterium_siraeum,DSM_15702,Glucose,Intermediate,positive,Human
+201221-1,Bifidobacterium_thermophilum_C3-12,DSM_20209,Glucose,Basic,NA,"Ruminator, unspecified"
+201221-2,Limosilactobacillus_mucosae_Lactobacillus_mucosae_strain_BV56,AGR63,Glucose,Basic,positive,Cow
+201221-3,Roseburia_inulinivorans,DSM_16841,Glucose,Intermediate,positive,Human
+201221-4,Clostridium_paraputrificum_G594,AGR2156,Glucose,Intermediate,positive,"Ruminator, unspecified"
+201229-1,Lachnobacterium_bovis,DSM_14045,Glucose,Basic,positive,Cow
+210104-1,Kandleria_vitulina,DSM_20405,Glucose,Intermediate,positive,Cow
+210409-1,Fibrobacter_succinogenes_S85,ATCC_19169,Cellobiose,Basic,negative,"Ruminator, unspecified"
+211130-2,Ruminococcus_bromii_L2-63,NA,Starch,Intermediate,positive,Human
+200120-1,Acetivibrio_thermocellus_LQ8_Clostridium_thermocellum,DSM_1313,Cellobiose,Intermediate,positive,Environmental
+211130-1,Ruminococcus_bromii_L2-63,NA,Fructose,Intermediate,positive,Human
+211130-3,Ruminococcus_bromii_L2-63,NA,Pullulan,Intermediate,positive,Human
+180628-1,Acetivibrio_thermocellus_LQ8_Clostridium_thermocellum,DSM_1313,MCC,Intermediate,positive,Environmental
