@@ -22,7 +22,7 @@ lcl <- ggplot(distance_df, aes(fct_inorder(LCL), cryoEM_Distance, fill = fct_rel
   scale_x_discrete(limits = c("Species","Genus","Family","Order","Class","Phylum","Kingdom","Domain",">Domain"), labels = c("Species","Genus","Family","Order","Class","Phylum","Kingdom","Domain","> Domain"))+
   scale_fill_brewer(type = "seq", direction = 1)+
   xlab(element_blank())+
-  ylab('Visual Distance')+  
+  ylab('Euclidean Distance')+  
   theme(legend.position="none", axis.text = element_text(size = 10, family = "sans", face = "plain"), axis.text.x = element_text(angle = 60, vjust = 0.8, hjust = 0.8), axis.text.y = element_text(vjust = 0.5))+
   theme(plot.margin = unit(c(1,0.5,0,1), "cm"))
 
