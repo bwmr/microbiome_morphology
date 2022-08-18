@@ -15,7 +15,7 @@ meta <- read.csv('results/cryoem_metadata_enriched.csv',sep = ",", header = TRUE
 setdiff(scaled.mini_repl$concat,rownames(wgs_dist))
 setdiff(scaled.mini_repl$concat,colnames(wgs_dist))
 
-# Remove distance measurements from WGS for which no cryoEM data exists
+# Remove distance measurements from WGS for which no 3D cryo-EM data exists
 row.names.remove <- setdiff(rownames(wgs_dist),scaled.mini_repl$concat)
 wgs_dist_cleaned <- wgs_dist[!(row.names(wgs_dist) %in% row.names.remove), ]
 wgs_dist_cleaned <- wgs_dist_cleaned[,!names(wgs_dist_cleaned) %in% row.names.remove]
@@ -30,7 +30,7 @@ wgs_dist_cleaned <- wgs_dist_cleaned[ ,order(colnames(wgs_dist_cleaned))]
 
 lowerTriangle(wgs_dist_cleaned) <- NA
 
-# Calculate Replicate-level cryo-EM distance, sort, retain only upper triangle
+# Calculate replicate-level cryo-EM distance, sort, retain only upper triangle
 cryoem_dist <- as.data.frame(as.matrix(vegdist(scaled.mini_repl[2:6], method = "euclidean", upper = TRUE)))
 
 colnames(cryoem_dist) <- scaled.mini_repl$concat
@@ -126,11 +126,9 @@ ggplot(df, aes(fct_inorder(LCL), WGS_Distance, fill = fct_relevel(LCL,"Species",
   ylab('Genomic Distance')+  
   theme(legend.position="none")
 
-# Calculate ANOVA Vis Dist vs. LCL
+# Calculate ANOVA Visual Dist vs. LCL
 sign <- aov(cryoEM_Distance ~ LCL, data = df)
 summary(sign)
-
-TukeyHSD(sign)
 
 # Calculate correlation WGS / cryoEM for all LCL Species / Genus / Family
 keep <- c("Species","Genus","Family")
