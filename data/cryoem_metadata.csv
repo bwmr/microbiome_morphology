@@ -19,7 +19,7 @@
 200715-2,Ligilactobacillus_ruminis_Lactobacillus_ruminis,DSM_20403,Glucose,Intermediate,positive,Cow
 200715-3,Terrisporobacter_glycolicus_strain_KPPR-9,NA,Glucose,Basic,positive,Cow
 200715-4,Basfia_succiniciproducens,DSM_22022,Glucose,Intermediate,negative,Cow
-200715-5,Bacteroides_vulgatus_Madison,NA,Glucose,Basic,negative,Cow
+200715-5,Bacteroides_vulgatus,ATCC_8482,Glucose,Basic,negative,Cow
 200715-6,Proteiniclasticum_ruminis,DSM_24773,Glucose,Intermediate,negative,Yak
 200727-2,Pediococcus_acidilactici_N775,AGR20,Glucose,Basic,positive,Sheep
 200727-3,Streptococcus_henryi_A_4,NA,Glucose,Basic,positive,Cow
