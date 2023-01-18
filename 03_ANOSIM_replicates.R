@@ -19,4 +19,4 @@ for (level in levels) {
   anosim_result[nrow(anosim_result) + 1,] = c(level,result$statistic, result$signif)
 }
 
-write.csv(anosim_result,"results/anosim_by_grouping.csv")
+write.csv(anosim_result,"results/anosim_by_grouping_new.csv")

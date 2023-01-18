@@ -2,9 +2,8 @@ rm(list = ls())
 
 library('tidyverse')
 library('ape')
-library('dendextend')
 
-# Import Scaled Measurements for clustering
+# Import Scaled Measurements
 vis <- read.csv('results/cryoem_scaled_mini_replicates.csv', header = T, row.names = 1)
 
 # Import WGS Distance Matrix
@@ -19,17 +18,9 @@ vis_cleaned <- vis_cleaned %>% mutate(concat = case_when(!is.na(Identifier) ~ pa
 vis_sum <- aggregate.data.frame(vis_cleaned[2:6], by = list(vis_cleaned$concat), FUN = mean)
 vis_sum <- vis_sum %>% column_to_rownames(var="Group.1")
 
-vis_dist <- dist(vis_sum, method = "euclidean")
-vis_tree <- as.phylo(hclust(vis_dist, method = "average"))
-
-write.tree(vis_tree,"results/vis_dist_tree_lachno_average.nwe")
-
 # Filter & Export WGS of replicates
 wgs_cleaned <- wgs_dist[(rownames(wgs_dist) %in% rownames(vis_sum)),(colnames(wgs_dist) %in% rownames(vis_sum))]
 wgs_cleaned <- as.dist(wgs_cleaned)
-wgs_tree <- as.phylo(hclust(wgs_cleaned, method = "average"))
+wgs_tree <- as.phylo(hclust(wgs_cleaned, method = "ward.D2"))
 
-write.tree(wgs_tree,"results/wgs_dist_tree_lachno_average.nwe")
-
-dends <- dendlist(as.dendrogram(vis_tree),as.dendrogram(wgs_tree))
-tanglegram(dends)
+write.tree(wgs_tree,"results/wgs_dist_tree_lachno_ward.nwe")

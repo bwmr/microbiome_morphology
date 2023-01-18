@@ -100,7 +100,7 @@ df <- na.omit(df)
 
 write.csv(df,'results/distance_vis_vs_genome_vs_LCL.csv')
 
-# Plot WGS vs. Vis
+# Plot Vis vs. WGS
 ggplot(df, aes(WGS_Distance, cryoEM_Distance, color = fct_relevel(LCL,"Species","Genus","Family","Order","Class","Phylum","Kingdom","Domain",">Domain")))+
   geom_point(size = 1, alpha = 0.5)+
   scale_fill_manual(values = c('#000000'))+

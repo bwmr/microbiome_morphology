@@ -3,6 +3,7 @@ rm(list = ls())
 library('tidyverse')
 library('vegan')
 library('gdata')
+library('cowplot')
 
 # Import values for cryoEM, select only intersect
 scaled.mini_repl <- read.csv('results/cryoem_scaled_mini_replicates.csv', sep = ",", header = T, row.names = 1)
@@ -80,9 +81,12 @@ cryoem_long <- na.omit(cryoem_long)
 
 # Plot
 ggplot(cryoem_long, aes(x = cryoEM_Distance, y = Metab_Distance, color = fct_relevel(LCL,"Species","Genus","Order","Domain")))+
-  geom_point(size = 3, na.rm=TRUE, alpha = 0.3)+
-  scale_color_brewer(name = 'Shared Rank', palette = "Dark2", direction = 1)+
+  theme_cowplot(12)+
+  geom_point(size = 3, na.rm=TRUE, alpha = 0.6)+
+  scale_color_brewer(name = 'Shared Taxonomy', palette = "Dark2", direction = 1)+
   geom_smooth(inherit.aes = F, aes(x = cryoEM_Distance, y = Metab_Distance, fill = 'Linear Fit / 95% CI'),method='lm')+
-  scale_fill_manual(name = "Linear Fit", values = c("grey50"))
+  scale_fill_manual(name = "Linear Fit", values = c("grey80"))+
+  xlab("Structural Similarity")+
+  ylab("Metabolic Similarity")
 
 cor.test(cryoem_long$cryoEM_Distance, cryoem_long$Metab_Distance, method = "pearson")

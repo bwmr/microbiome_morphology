@@ -49,6 +49,19 @@ bt_cw <- ggplot(btheta_df, aes(y = CW, x = Sample_ID))+
                      paired = FALSE, tip.length=0.03, vjust = -0.2, label = "p.signif", inherit.aes = FALSE,
                      symnum.args = list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1), symbols = c("****", "***", "**", "*", "ns")))
 
+bt_circ <- ggplot(btheta_df, aes(y = Circ, x = Sample_ID))+
+  theme_minimal_hgrid(10)+
+  geom_jitter(aes(color = Sample_ID), show.legend = FALSE, size = 3, alpha = 0.9, width = 0.1, height = 0)+
+  scale_x_discrete(labels = c('Gluc','Sta+Malt'))+
+  scale_color_manual(labels = c('On Glucose','On Starch/Maltose'),
+                     values = c('200714-1'="#f768a1",'201019-1'="#ae017e"))+
+  xlab(element_blank())+
+  ylab("Circularity")+
+  scale_y_continuous(expand = expansion(mult = c(0.2)))+
+  stat_compare_means(method = "t.test", comparisons = list(c("200714-1","201019-1")), 
+                     paired = FALSE, tip.length=0.03, vjust = -0.2, label = "p.signif", inherit.aes = FALSE,
+                     symnum.args = list(cutpoints = c(0, 0.0001, 0.001, 0.01, 0.05, 1), symbols = c("****", "***", "**", "*", "ns")))
+
 # Plot R. bromii comparison diameter
 rbromii_df <- values[values$Sample_ID == "211130-1" | values$Sample_ID == "211130-3" | values$Sample_ID == "211130-2",]
 
@@ -68,6 +81,7 @@ rb_dia <- ggplot(rbromii_df, aes(y = Diameter, x = fct_relevel(Sample_ID,"211130
 # Output Panels
 ggsave('Fig4-panelA.pdf', plot = full_plot, device = 'pdf', width = 60, height = 60, units = c("mm"), dpi = 300 )
 
-ggsave('Fig4-panelB.pdf', plot = bt_cw, device = 'pdf', width = 40, height = 80, units = c("mm"), dpi = 300 )
+ggsave('Fig4-panelB1.pdf', plot = bt_cw, device = 'pdf', width = 50, height = 50, units = c("mm"), dpi = 300 )
+ggsave('Fig4-panelB2.pdf', plot = bt_circ, device = 'pdf', width = 50, height = 40, units = c("mm"), dpi = 300 )
 
-ggsave('Fig4-panelC.pdf', plot = rb_dia, device = 'pdf', width = 50, height = 55, units = c("mm"), dpi = 300 )
+ggsave('Fig4-panelC.pdf', plot = rb_dia, device = 'pdf', width = 50, height = 50, units = c("mm"), dpi = 300 )
